@@ -1,0 +1,22 @@
+<Project Sdk="Beutl.Extensibility.Sdk/2.0.0-preview.12">
+
+    <PropertyGroup>
+        <PackageId>Beutl.Extensions.FocusLines</PackageId>
+        <Title>集中線</Title>
+        <Description>集中線・ウニフラッシュ・ベタフラッシュ・流線・放射の効果線を描くオブジェクトを追加します</Description>
+        <PackageTags>effect,manga,focuslines,speedlines,集中線,効果線,流線,ウニフラ,ベタフラ</PackageTags>
+        <Version>0.1.0</Version>
+        <AssemblyVersion>0.1.0.0</AssemblyVersion>
+        <Authors>Yuto Terada</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>icon.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Beutl.Extensions.FocusLines.Tests" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\assets\icon.png" Pack="true" PackagePath="\" Visible="false" />
+    </ItemGroup>
+</Project>
