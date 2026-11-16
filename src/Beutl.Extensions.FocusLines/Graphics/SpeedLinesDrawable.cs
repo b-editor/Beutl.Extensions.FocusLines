@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Beutl.Composition;
 using Beutl.Engine;
+using Beutl.Extensions.FocusLines.Properties;
 using Beutl.Graphics;
 using Beutl.Graphics.Rendering;
 using Beutl.Media;
@@ -8,7 +9,7 @@ using Beutl.Media;
 namespace Beutl.Extensions.FocusLines.Graphics;
 
 /// <summary>Parallel lines across the whole screen that stream past in one direction.</summary>
-[Display(Name = "流線")]
+[Display(Name = nameof(Strings.SpeedLines), ResourceType = typeof(Strings))]
 public sealed partial class SpeedLinesDrawable : Drawable
 {
     public SpeedLinesDrawable()
@@ -17,61 +18,61 @@ public sealed partial class SpeedLinesDrawable : Drawable
         Fill.Value = new SolidColorBrush(Colors.White);
     }
 
-    [Display(Name = "角度", Description = "線の向き。0で右へ流れます")]
+    [Display(Name = nameof(Strings.Angle), Description = nameof(Strings.AngleDescription), ResourceType = typeof(Strings))]
     [Unit(PropertyUnit.Degrees)]
     public IExpressionProperty<float> Angle { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "本数")]
+    [Display(Name = nameof(Strings.Count), ResourceType = typeof(Strings))]
     [Range(1, 2000)]
     public IExpressionProperty<int> Count { get; } = Property.CreateAnimatable(90);
 
-    [Display(Name = "長さ", Description = "線の向きの画面の長さに対する、線の長さ")]
+    [Display(Name = nameof(Strings.Length), Description = nameof(Strings.SpeedLengthDescription), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> Length { get; } = Property.CreateAnimatable(45f);
 
-    [Display(Name = "長さのばらつき")]
+    [Display(Name = nameof(Strings.LengthVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> LengthVariation { get; } = Property.CreateAnimatable(60f);
 
-    [Display(Name = "太さ")]
+    [Display(Name = nameof(Strings.Thickness), ResourceType = typeof(Strings))]
     [Range(0f, 1000f)]
     public IExpressionProperty<float> Thickness { get; } = Property.CreateAnimatable(8f);
 
-    [Display(Name = "太さのばらつき")]
+    [Display(Name = nameof(Strings.ThicknessVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> ThicknessVariation { get; } = Property.CreateAnimatable(70f);
 
-    [Display(Name = "線の形")]
+    [Display(Name = nameof(Strings.LineShape), ResourceType = typeof(Strings))]
     public IExpressionProperty<SpeedLineShape> Shape { get; } = Property.CreateAnimatable(SpeedLineShape.Both);
 
-    [Display(Name = "速さ (px/秒)", Description = "線が流れる速さ。0で止まります")]
+    [Display(Name = nameof(Strings.Speed), Description = nameof(Strings.SpeedDescription), ResourceType = typeof(Strings))]
     [Range(-100000f, 100000f)]
     public IExpressionProperty<float> Speed { get; } = Property.CreateAnimatable(3000f);
 
-    [Display(Name = "速さのばらつき")]
+    [Display(Name = nameof(Strings.SpeedVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> SpeedVariation { get; } = Property.CreateAnimatable(40f);
 
-    [Display(Name = "空白の幅", Description = "中央に線を描かない帯の幅。画面に対する割合")]
+    [Display(Name = nameof(Strings.ClearWidth), Description = nameof(Strings.ClearBandDescription), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> ClearBand { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "更新間隔 (秒)", Description = "この間隔で線を描き直します。0で描き直しません")]
+    [Display(Name = nameof(Strings.UpdateInterval), Description = nameof(Strings.UpdateIntervalSpeedLinesDescription), ResourceType = typeof(Strings))]
     [Range(0f, 60f)]
     public IExpressionProperty<float> UpdateInterval { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "シード")]
+    [Display(Name = nameof(Strings.Seed), ResourceType = typeof(Strings))]
     public IExpressionProperty<int> Seed { get; } = Property.CreateAnimatable(0);
 
-    [Display(Name = "塗りつぶし")]
+    [Display(Name = nameof(Strings.Fill), ResourceType = typeof(Strings))]
     public IExpressionProperty<Brush?> Fill { get; } = Property.CreateExpression<Brush?>();
 
-    [Display(Name = "ストローク")]
+    [Display(Name = nameof(Strings.Stroke), ResourceType = typeof(Strings))]
     public IExpressionProperty<Pen?> Pen { get; } = Property.CreateExpression<Pen?>();
 
     public new partial class Resource

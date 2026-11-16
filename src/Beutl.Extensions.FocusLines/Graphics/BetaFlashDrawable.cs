@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Beutl.Composition;
 using Beutl.Engine;
+using Beutl.Extensions.FocusLines.Properties;
 using Beutl.Graphics;
 using Beutl.Graphics.Rendering;
 using Beutl.Media;
@@ -11,7 +12,7 @@ namespace Beutl.Extensions.FocusLines.Graphics;
 /// A solid fill over the whole screen with a clear area round a point, from which rays of light burst into the fill.
 /// </summary>
 /// <remarks>The clear area shows what is below; its centre is measured from the middle of the screen.</remarks>
-[Display(Name = "ベタフラッシュ")]
+[Display(Name = nameof(Strings.BetaFlash), ResourceType = typeof(Strings))]
 public sealed partial class BetaFlashDrawable : Drawable, IEditingHandleProvider
 {
     public BetaFlashDrawable()
@@ -21,63 +22,63 @@ public sealed partial class BetaFlashDrawable : Drawable, IEditingHandleProvider
         Flash.Value = new SolidColorBrush(Colors.White);
     }
 
-    [Display(Name = "中心", Description = "画面の中央からの位置。プレビューのハンドルでも動かせます")]
+    [Display(Name = nameof(Strings.Center), Description = nameof(Strings.CenterDescription), ResourceType = typeof(Strings))]
     public IExpressionProperty<Point> Center { get; } = Property.CreateAnimatable(default(Point));
 
-    [Display(Name = "本数")]
+    [Display(Name = nameof(Strings.Count), ResourceType = typeof(Strings))]
     [Range(1, 2000)]
     public IExpressionProperty<int> Count { get; } = Property.CreateAnimatable(90);
 
-    [Display(Name = "空白の幅", Description = "画面の大きさに対する、中心の空白の大きさ")]
+    [Display(Name = nameof(Strings.ClearWidth), Description = nameof(Strings.ClearSizePercentDescription), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
-    [CombinedEditor(nameof(ClearHeight), Name = "空白の大きさ")]
+    [CombinedEditor(nameof(ClearHeight), Name = nameof(Strings.ClearSize), ResourceType = typeof(Strings))]
     public IExpressionProperty<float> ClearWidth { get; } = Property.CreateAnimatable(36f);
 
-    [Display(Name = "空白の高さ")]
+    [Display(Name = nameof(Strings.ClearHeight), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> ClearHeight { get; } = Property.CreateAnimatable(36f);
 
-    [Display(Name = "長さ", Description = "空白の端から画面の端までに対する、光の長さ")]
+    [Display(Name = nameof(Strings.Length), Description = nameof(Strings.FlashLengthDescription), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> Length { get; } = Property.CreateAnimatable(75f);
 
-    [Display(Name = "長さのばらつき")]
+    [Display(Name = nameof(Strings.LengthVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> LengthVariation { get; } = Property.CreateAnimatable(70f);
 
-    [Display(Name = "太さ", Description = "根元での光の太さ")]
+    [Display(Name = nameof(Strings.Thickness), Description = nameof(Strings.FlashThicknessDescription), ResourceType = typeof(Strings))]
     [Range(0f, 1000f)]
     public IExpressionProperty<float> Thickness { get; } = Property.CreateAnimatable(30f);
 
-    [Display(Name = "太さのばらつき")]
+    [Display(Name = nameof(Strings.ThicknessVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> ThicknessVariation { get; } = Property.CreateAnimatable(50f);
 
-    [Display(Name = "間隔のばらつき")]
+    [Display(Name = nameof(Strings.SpacingVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> SpacingVariation { get; } = Property.CreateAnimatable(100f);
 
-    [Display(Name = "回転")]
+    [Display(Name = nameof(Strings.Rotation), ResourceType = typeof(Strings))]
     [Unit(PropertyUnit.Degrees)]
     public IExpressionProperty<float> Rotation { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "更新間隔 (秒)", Description = "この間隔で光を描き直します。0で止まります")]
+    [Display(Name = nameof(Strings.UpdateInterval), Description = nameof(Strings.UpdateIntervalFlashDescription), ResourceType = typeof(Strings))]
     [Range(0f, 60f)]
     public IExpressionProperty<float> UpdateInterval { get; } = Property.CreateAnimatable(0.1f);
 
-    [Display(Name = "シード")]
+    [Display(Name = nameof(Strings.Seed), ResourceType = typeof(Strings))]
     public IExpressionProperty<int> Seed { get; } = Property.CreateAnimatable(0);
 
-    [Display(Name = "塗りつぶし", Description = "光と空白の外側")]
+    [Display(Name = nameof(Strings.Fill), Description = nameof(Strings.FlashFillDescription), ResourceType = typeof(Strings))]
     public IExpressionProperty<Brush?> Fill { get; } = Property.CreateExpression<Brush?>();
 
-    [Display(Name = "光", Description = "なしにすると、光の形に抜けます")]
+    [Display(Name = nameof(Strings.Light), Description = nameof(Strings.LightDescription), ResourceType = typeof(Strings))]
     public IExpressionProperty<Brush?> Flash { get; } = Property.CreateExpression<Brush?>();
 
     public IReadOnlyList<EditingHandle> GetEditingHandles(MediaTime time) => CenterHandle.Get(this, Center, time);

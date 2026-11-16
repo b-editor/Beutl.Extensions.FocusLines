@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="FocusLines" xml:space="preserve">
+    <value>集中线</value>
+  </data>
+  <data name="UrchinFlash" xml:space="preserve">
+    <value>海胆闪光</value>
+  </data>
+  <data name="BetaFlash" xml:space="preserve">
+    <value>实心闪光</value>
+  </data>
+  <data name="SpeedLines" xml:space="preserve">
+    <value>速度线</value>
+  </data>
+  <data name="Sunburst" xml:space="preserve">
+    <value>放射线</value>
+  </data>
+  <data name="FocusLinesDescription" xml:space="preserve">
+    <value>用向中心汇聚的线条覆盖画面。</value>
+  </data>
+  <data name="UrchinFlashDescription" xml:space="preserve">
+    <value>线条从中心空白区域周围向外呈尖刺状展开。</value>
+  </data>
+  <data name="BetaFlashDescription" xml:space="preserve">
+    <value>填充画面，并从中心向外发出光芒。</value>
+  </data>
+  <data name="SpeedLinesDescription" xml:space="preserve">
+    <value>用向同一方向移动的平行线覆盖画面。</value>
+  </data>
+  <data name="SunburstDescription" xml:space="preserve">
+    <value>用从中心向外呈扇形展开的线条覆盖画面。</value>
+  </data>
+  <data name="Center" xml:space="preserve">
+    <value>中心</value>
+  </data>
+  <data name="CenterDescription" xml:space="preserve">
+    <value>相对于画面中心的位置。也可拖动预览中的控制点来调整。</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>线条数量</value>
+  </data>
+  <data name="Thickness" xml:space="preserve">
+    <value>粗细</value>
+  </data>
+  <data name="FocusThicknessDescription" xml:space="preserve">
+    <value>线条在画面边缘处的粗细。</value>
+  </data>
+  <data name="ThicknessVariation" xml:space="preserve">
+    <value>粗细变化</value>
+  </data>
+  <data name="SpacingVariation" xml:space="preserve">
+    <value>间距变化</value>
+  </data>
+  <data name="ClearWidth" xml:space="preserve">
+    <value>空白宽度</value>
+  </data>
+  <data name="ClearHeight" xml:space="preserve">
+    <value>空白高度</value>
+  </data>
+  <data name="ClearSize" xml:space="preserve">
+    <value>空白大小</value>
+  </data>
+  <data name="ClearSizePercentDescription" xml:space="preserve">
+    <value>中心空白区域的大小，以画面尺寸的百分比表示。</value>
+  </data>
+  <data name="ClearSizePixelsDescription" xml:space="preserve">
+    <value>中心空白区域的大小。</value>
+  </data>
+  <data name="Jaggedness" xml:space="preserve">
+    <value>锯齿程度</value>
+  </data>
+  <data name="JaggednessDescription" xml:space="preserve">
+    <value>线条起点的变化程度，以空白区域大小的百分比表示。</value>
+  </data>
+  <data name="Rotation" xml:space="preserve">
+    <value>旋转</value>
+  </data>
+  <data name="Twist" xml:space="preserve">
+    <value>扭曲</value>
+  </data>
+  <data name="TwistDescription" xml:space="preserve">
+    <value>将线条弯曲成螺旋形。</value>
+  </data>
+  <data name="UpdateInterval" xml:space="preserve">
+    <value>更新间隔（秒）</value>
+  </data>
+  <data name="UpdateIntervalLinesDescription" xml:space="preserve">
+    <value>按此间隔重新绘制线条。设为0可停止重绘。</value>
+  </data>
+  <data name="UpdateIntervalSpeedLinesDescription" xml:space="preserve">
+    <value>按此间隔重新绘制线条。设为0则不重新绘制。</value>
+  </data>
+  <data name="UpdateIntervalFlashDescription" xml:space="preserve">
+    <value>按此间隔重新绘制光芒。设为0可停止重绘。</value>
+  </data>
+  <data name="Seed" xml:space="preserve">
+    <value>随机种子</value>
+  </data>
+  <data name="Fill" xml:space="preserve">
+    <value>填充</value>
+  </data>
+  <data name="Stroke" xml:space="preserve">
+    <value>描边</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>长度</value>
+  </data>
+  <data name="LengthVariation" xml:space="preserve">
+    <value>长度变化</value>
+  </data>
+  <data name="LineShape" xml:space="preserve">
+    <value>线条形状</value>
+  </data>
+  <data name="Angle" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="AngleDescription" xml:space="preserve">
+    <value>线条的方向。设为0时向右移动。</value>
+  </data>
+  <data name="SpeedLengthDescription" xml:space="preserve">
+    <value>线条长度，以沿线条方向的画面长度的百分比表示。</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>速度（像素/秒）</value>
+  </data>
+  <data name="SpeedDescription" xml:space="preserve">
+    <value>线条移动的速度。设为0可停止移动。</value>
+  </data>
+  <data name="SpeedVariation" xml:space="preserve">
+    <value>速度变化</value>
+  </data>
+  <data name="ClearBandDescription" xml:space="preserve">
+    <value>中央不绘制线条的带状区域宽度，以画面尺寸的百分比表示。</value>
+  </data>
+  <data name="FlashLengthDescription" xml:space="preserve">
+    <value>光芒长度，以空白区域边缘到画面边缘距离的百分比表示。</value>
+  </data>
+  <data name="FlashThicknessDescription" xml:space="preserve">
+    <value>光芒根部的粗细。</value>
+  </data>
+  <data name="FlashFillDescription" xml:space="preserve">
+    <value>填充光芒和中心空白区域之外的部分。</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>光芒</value>
+  </data>
+  <data name="LightDescription" xml:space="preserve">
+    <value>设为无时，光芒形状的区域将变为透明。</value>
+  </data>
+  <data name="RayWidth" xml:space="preserve">
+    <value>射线宽度</value>
+  </data>
+  <data name="RayWidthDescription" xml:space="preserve">
+    <value>射线宽度，以射线与间隙总宽度的百分比表示。</value>
+  </data>
+  <data name="RotationSpeed" xml:space="preserve">
+    <value>旋转速度（°/秒）</value>
+  </data>
+  <data name="RotationSpeedDescription" xml:space="preserve">
+    <value>正值表示顺时针旋转。</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>背景</value>
+  </data>
+  <data name="BackgroundDescription" xml:space="preserve">
+    <value>填充射线之间的间隙。</value>
+  </data>
+  <data name="TaperBoth" xml:space="preserve">
+    <value>两端变细</value>
+  </data>
+  <data name="TaperOuter" xml:space="preserve">
+    <value>外端变细</value>
+  </data>
+  <data name="TaperInner" xml:space="preserve">
+    <value>内端变细</value>
+  </data>
+  <data name="TaperBack" xml:space="preserve">
+    <value>后端变细</value>
+  </data>
+  <data name="TaperFront" xml:space="preserve">
+    <value>前端变细</value>
+  </data>
+  <data name="TaperNone" xml:space="preserve">
+    <value>不变细</value>
+  </data>
+</root>

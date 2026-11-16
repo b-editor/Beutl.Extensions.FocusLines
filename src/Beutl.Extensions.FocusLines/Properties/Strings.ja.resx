@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="FocusLines" xml:space="preserve">
+    <value>集中線</value>
+  </data>
+  <data name="UrchinFlash" xml:space="preserve">
+    <value>ウニフラッシュ</value>
+  </data>
+  <data name="BetaFlash" xml:space="preserve">
+    <value>ベタフラッシュ</value>
+  </data>
+  <data name="SpeedLines" xml:space="preserve">
+    <value>流線</value>
+  </data>
+  <data name="Sunburst" xml:space="preserve">
+    <value>放射</value>
+  </data>
+  <data name="FocusLinesDescription" xml:space="preserve">
+    <value>中心に向かって集まる線で、画面を覆います</value>
+  </data>
+  <data name="UrchinFlashDescription" xml:space="preserve">
+    <value>中心の周りから外へとげのように広がる線です</value>
+  </data>
+  <data name="BetaFlashDescription" xml:space="preserve">
+    <value>画面を塗りつぶし、中心から光が広がります</value>
+  </data>
+  <data name="SpeedLinesDescription" xml:space="preserve">
+    <value>一方向へ流れる平行な線で、画面を覆います</value>
+  </data>
+  <data name="SunburstDescription" xml:space="preserve">
+    <value>中心から扇形に広がる線で、画面を覆います</value>
+  </data>
+  <data name="Center" xml:space="preserve">
+    <value>中心</value>
+  </data>
+  <data name="CenterDescription" xml:space="preserve">
+    <value>画面の中央からの位置。プレビューのハンドルでも動かせます</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>本数</value>
+  </data>
+  <data name="Thickness" xml:space="preserve">
+    <value>太さ</value>
+  </data>
+  <data name="FocusThicknessDescription" xml:space="preserve">
+    <value>画面の端での線の太さ</value>
+  </data>
+  <data name="ThicknessVariation" xml:space="preserve">
+    <value>太さのばらつき</value>
+  </data>
+  <data name="SpacingVariation" xml:space="preserve">
+    <value>間隔のばらつき</value>
+  </data>
+  <data name="ClearWidth" xml:space="preserve">
+    <value>空白の幅</value>
+  </data>
+  <data name="ClearHeight" xml:space="preserve">
+    <value>空白の高さ</value>
+  </data>
+  <data name="ClearSize" xml:space="preserve">
+    <value>空白の大きさ</value>
+  </data>
+  <data name="ClearSizePercentDescription" xml:space="preserve">
+    <value>画面の大きさに対する、中心の空白の大きさ</value>
+  </data>
+  <data name="ClearSizePixelsDescription" xml:space="preserve">
+    <value>中心の空白の大きさ</value>
+  </data>
+  <data name="Jaggedness" xml:space="preserve">
+    <value>ギザギザ</value>
+  </data>
+  <data name="JaggednessDescription" xml:space="preserve">
+    <value>線の始まる位置のばらつき。空白の大きさに対する割合</value>
+  </data>
+  <data name="Rotation" xml:space="preserve">
+    <value>回転</value>
+  </data>
+  <data name="Twist" xml:space="preserve">
+    <value>ねじれ</value>
+  </data>
+  <data name="TwistDescription" xml:space="preserve">
+    <value>線を渦のように曲げます</value>
+  </data>
+  <data name="UpdateInterval" xml:space="preserve">
+    <value>更新間隔 (秒)</value>
+  </data>
+  <data name="UpdateIntervalLinesDescription" xml:space="preserve">
+    <value>この間隔で線を描き直します。0で止まります</value>
+  </data>
+  <data name="UpdateIntervalSpeedLinesDescription" xml:space="preserve">
+    <value>この間隔で線を描き直します。0で描き直しません</value>
+  </data>
+  <data name="UpdateIntervalFlashDescription" xml:space="preserve">
+    <value>この間隔で光を描き直します。0で止まります</value>
+  </data>
+  <data name="Seed" xml:space="preserve">
+    <value>シード</value>
+  </data>
+  <data name="Fill" xml:space="preserve">
+    <value>塗りつぶし</value>
+  </data>
+  <data name="Stroke" xml:space="preserve">
+    <value>ストローク</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>長さ</value>
+  </data>
+  <data name="LengthVariation" xml:space="preserve">
+    <value>長さのばらつき</value>
+  </data>
+  <data name="LineShape" xml:space="preserve">
+    <value>線の形</value>
+  </data>
+  <data name="Angle" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="AngleDescription" xml:space="preserve">
+    <value>線の向き。0で右へ流れます</value>
+  </data>
+  <data name="SpeedLengthDescription" xml:space="preserve">
+    <value>線の向きの画面の長さに対する、線の長さ</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>速さ (px/秒)</value>
+  </data>
+  <data name="SpeedDescription" xml:space="preserve">
+    <value>線が流れる速さ。0で止まります</value>
+  </data>
+  <data name="SpeedVariation" xml:space="preserve">
+    <value>速さのばらつき</value>
+  </data>
+  <data name="ClearBandDescription" xml:space="preserve">
+    <value>中央に線を描かない帯の幅。画面に対する割合</value>
+  </data>
+  <data name="FlashLengthDescription" xml:space="preserve">
+    <value>空白の端から画面の端までに対する、光の長さ</value>
+  </data>
+  <data name="FlashThicknessDescription" xml:space="preserve">
+    <value>根元での光の太さ</value>
+  </data>
+  <data name="FlashFillDescription" xml:space="preserve">
+    <value>光と空白の外側</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>光</value>
+  </data>
+  <data name="LightDescription" xml:space="preserve">
+    <value>なしにすると、光の形に抜けます</value>
+  </data>
+  <data name="RayWidth" xml:space="preserve">
+    <value>線の幅</value>
+  </data>
+  <data name="RayWidthDescription" xml:space="preserve">
+    <value>線と隙間を合わせた幅に対する、線の幅</value>
+  </data>
+  <data name="RotationSpeed" xml:space="preserve">
+    <value>回転の速さ (°/秒)</value>
+  </data>
+  <data name="RotationSpeedDescription" xml:space="preserve">
+    <value>正の値で時計回りに回ります</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>背景</value>
+  </data>
+  <data name="BackgroundDescription" xml:space="preserve">
+    <value>線の間を塗ります</value>
+  </data>
+  <data name="TaperBoth" xml:space="preserve">
+    <value>両端を細く</value>
+  </data>
+  <data name="TaperOuter" xml:space="preserve">
+    <value>外側を細く</value>
+  </data>
+  <data name="TaperInner" xml:space="preserve">
+    <value>内側を細く</value>
+  </data>
+  <data name="TaperBack" xml:space="preserve">
+    <value>後ろを細く</value>
+  </data>
+  <data name="TaperFront" xml:space="preserve">
+    <value>前を細く</value>
+  </data>
+  <data name="TaperNone" xml:space="preserve">
+    <value>細くしない</value>
+  </data>
+</root>

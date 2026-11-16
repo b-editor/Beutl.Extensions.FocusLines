@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="FocusLines" xml:space="preserve">
+    <value>Líneas de enfoque</value>
+  </data>
+  <data name="UrchinFlash" xml:space="preserve">
+    <value>Destello de erizo</value>
+  </data>
+  <data name="BetaFlash" xml:space="preserve">
+    <value>Destello sólido</value>
+  </data>
+  <data name="SpeedLines" xml:space="preserve">
+    <value>Líneas de velocidad</value>
+  </data>
+  <data name="Sunburst" xml:space="preserve">
+    <value>Rayos radiales</value>
+  </data>
+  <data name="FocusLinesDescription" xml:space="preserve">
+    <value>Cubre la pantalla con líneas que convergen en un punto.</value>
+  </data>
+  <data name="UrchinFlashDescription" xml:space="preserve">
+    <value>Las líneas se extienden hacia fuera como púas alrededor de un centro vacío.</value>
+  </data>
+  <data name="BetaFlashDescription" xml:space="preserve">
+    <value>Rellena la pantalla con un color sólido y rayos de luz desde el centro.</value>
+  </data>
+  <data name="SpeedLinesDescription" xml:space="preserve">
+    <value>Cubre la pantalla con líneas paralelas que se mueven en una dirección.</value>
+  </data>
+  <data name="SunburstDescription" xml:space="preserve">
+    <value>Cubre la pantalla con rayos que se extienden desde el centro.</value>
+  </data>
+  <data name="Center" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="CenterDescription" xml:space="preserve">
+    <value>Posición respecto al centro de la pantalla. También se puede arrastrar el control de la vista previa.</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Número de líneas</value>
+  </data>
+  <data name="Thickness" xml:space="preserve">
+    <value>Grosor</value>
+  </data>
+  <data name="FocusThicknessDescription" xml:space="preserve">
+    <value>Grosor de las líneas en el borde de la pantalla.</value>
+  </data>
+  <data name="ThicknessVariation" xml:space="preserve">
+    <value>Variación del grosor</value>
+  </data>
+  <data name="SpacingVariation" xml:space="preserve">
+    <value>Variación del espaciado</value>
+  </data>
+  <data name="ClearWidth" xml:space="preserve">
+    <value>Ancho del espacio vacío</value>
+  </data>
+  <data name="ClearHeight" xml:space="preserve">
+    <value>Alto del espacio vacío</value>
+  </data>
+  <data name="ClearSize" xml:space="preserve">
+    <value>Tamaño del espacio vacío</value>
+  </data>
+  <data name="ClearSizePercentDescription" xml:space="preserve">
+    <value>Tamaño del centro vacío como porcentaje de las dimensiones de la pantalla.</value>
+  </data>
+  <data name="ClearSizePixelsDescription" xml:space="preserve">
+    <value>Tamaño del espacio vacío en el centro.</value>
+  </data>
+  <data name="Jaggedness" xml:space="preserve">
+    <value>Irregularidad</value>
+  </data>
+  <data name="JaggednessDescription" xml:space="preserve">
+    <value>Variación del punto de inicio de las líneas, como porcentaje del tamaño del espacio vacío.</value>
+  </data>
+  <data name="Rotation" xml:space="preserve">
+    <value>Rotación</value>
+  </data>
+  <data name="Twist" xml:space="preserve">
+    <value>Torsión</value>
+  </data>
+  <data name="TwistDescription" xml:space="preserve">
+    <value>Curva las líneas en forma de espiral.</value>
+  </data>
+  <data name="UpdateInterval" xml:space="preserve">
+    <value>Intervalo de actualización (s)</value>
+  </data>
+  <data name="UpdateIntervalLinesDescription" xml:space="preserve">
+    <value>Vuelve a dibujar las líneas a este intervalo. Con 0 se desactiva el redibujado.</value>
+  </data>
+  <data name="UpdateIntervalSpeedLinesDescription" xml:space="preserve">
+    <value>Vuelve a dibujar las líneas a este intervalo. Con 0 se desactiva el redibujado.</value>
+  </data>
+  <data name="UpdateIntervalFlashDescription" xml:space="preserve">
+    <value>Vuelve a dibujar los rayos a este intervalo. Con 0 se desactiva el redibujado.</value>
+  </data>
+  <data name="Seed" xml:space="preserve">
+    <value>Semilla</value>
+  </data>
+  <data name="Fill" xml:space="preserve">
+    <value>Relleno</value>
+  </data>
+  <data name="Stroke" xml:space="preserve">
+    <value>Contorno</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Longitud</value>
+  </data>
+  <data name="LengthVariation" xml:space="preserve">
+    <value>Variación de la longitud</value>
+  </data>
+  <data name="LineShape" xml:space="preserve">
+    <value>Forma de la línea</value>
+  </data>
+  <data name="Angle" xml:space="preserve">
+    <value>Ángulo</value>
+  </data>
+  <data name="AngleDescription" xml:space="preserve">
+    <value>Dirección de las líneas. Con 0, se mueven hacia la derecha.</value>
+  </data>
+  <data name="SpeedLengthDescription" xml:space="preserve">
+    <value>Longitud de las líneas como porcentaje de la longitud de la pantalla en su dirección.</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>Velocidad (px/s)</value>
+  </data>
+  <data name="SpeedDescription" xml:space="preserve">
+    <value>Velocidad de movimiento de las líneas. Con 0 se detienen.</value>
+  </data>
+  <data name="SpeedVariation" xml:space="preserve">
+    <value>Variación de la velocidad</value>
+  </data>
+  <data name="ClearBandDescription" xml:space="preserve">
+    <value>Ancho de la franja central sin líneas, como porcentaje de la pantalla.</value>
+  </data>
+  <data name="FlashLengthDescription" xml:space="preserve">
+    <value>Longitud de los rayos como porcentaje de la distancia del espacio vacío al borde de la pantalla.</value>
+  </data>
+  <data name="FlashThicknessDescription" xml:space="preserve">
+    <value>Grosor de los rayos en su base.</value>
+  </data>
+  <data name="FlashFillDescription" xml:space="preserve">
+    <value>Rellena el área exterior a los rayos y al centro vacío.</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Luz</value>
+  </data>
+  <data name="LightDescription" xml:space="preserve">
+    <value>Si no se define, los rayos dejan huecos transparentes.</value>
+  </data>
+  <data name="RayWidth" xml:space="preserve">
+    <value>Ancho de los rayos</value>
+  </data>
+  <data name="RayWidthDescription" xml:space="preserve">
+    <value>Ancho de un rayo como porcentaje del ancho total del rayo y su espacio.</value>
+  </data>
+  <data name="RotationSpeed" xml:space="preserve">
+    <value>Velocidad de rotación (°/s)</value>
+  </data>
+  <data name="RotationSpeedDescription" xml:space="preserve">
+    <value>Los valores positivos giran en sentido horario.</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Fondo</value>
+  </data>
+  <data name="BackgroundDescription" xml:space="preserve">
+    <value>Rellena los espacios entre los rayos.</value>
+  </data>
+  <data name="TaperBoth" xml:space="preserve">
+    <value>Afinar ambos extremos</value>
+  </data>
+  <data name="TaperOuter" xml:space="preserve">
+    <value>Afinar el extremo exterior</value>
+  </data>
+  <data name="TaperInner" xml:space="preserve">
+    <value>Afinar el extremo interior</value>
+  </data>
+  <data name="TaperBack" xml:space="preserve">
+    <value>Afinar el extremo trasero</value>
+  </data>
+  <data name="TaperFront" xml:space="preserve">
+    <value>Afinar el extremo delantero</value>
+  </data>
+  <data name="TaperNone" xml:space="preserve">
+    <value>Sin afinado</value>
+  </data>
+</root>

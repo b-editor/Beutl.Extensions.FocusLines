@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="FocusLines" xml:space="preserve">
+    <value>집중선</value>
+  </data>
+  <data name="UrchinFlash" xml:space="preserve">
+    <value>성게 플래시</value>
+  </data>
+  <data name="BetaFlash" xml:space="preserve">
+    <value>베타 플래시</value>
+  </data>
+  <data name="SpeedLines" xml:space="preserve">
+    <value>속도선</value>
+  </data>
+  <data name="Sunburst" xml:space="preserve">
+    <value>방사형 선</value>
+  </data>
+  <data name="FocusLinesDescription" xml:space="preserve">
+    <value>중심으로 모이는 선으로 화면을 채웁니다.</value>
+  </data>
+  <data name="UrchinFlashDescription" xml:space="preserve">
+    <value>중앙의 빈 영역 주위에서 가시처럼 바깥으로 뻗는 선입니다.</value>
+  </data>
+  <data name="BetaFlashDescription" xml:space="preserve">
+    <value>화면을 채우고 중심에서 빛이 퍼져 나갑니다.</value>
+  </data>
+  <data name="SpeedLinesDescription" xml:space="preserve">
+    <value>한 방향으로 흐르는 평행선으로 화면을 채웁니다.</value>
+  </data>
+  <data name="SunburstDescription" xml:space="preserve">
+    <value>중심에서 부채꼴로 퍼지는 선으로 화면을 채웁니다.</value>
+  </data>
+  <data name="Center" xml:space="preserve">
+    <value>중심</value>
+  </data>
+  <data name="CenterDescription" xml:space="preserve">
+    <value>화면 중앙을 기준으로 한 위치입니다. 미리 보기의 핸들을 드래그해서도 이동할 수 있습니다.</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>선 개수</value>
+  </data>
+  <data name="Thickness" xml:space="preserve">
+    <value>두께</value>
+  </data>
+  <data name="FocusThicknessDescription" xml:space="preserve">
+    <value>화면 가장자리에서의 선 두께입니다.</value>
+  </data>
+  <data name="ThicknessVariation" xml:space="preserve">
+    <value>두께 변화</value>
+  </data>
+  <data name="SpacingVariation" xml:space="preserve">
+    <value>간격 변화</value>
+  </data>
+  <data name="ClearWidth" xml:space="preserve">
+    <value>빈 영역 너비</value>
+  </data>
+  <data name="ClearHeight" xml:space="preserve">
+    <value>빈 영역 높이</value>
+  </data>
+  <data name="ClearSize" xml:space="preserve">
+    <value>빈 영역 크기</value>
+  </data>
+  <data name="ClearSizePercentDescription" xml:space="preserve">
+    <value>화면 크기에 대한 중앙의 빈 영역 크기 비율입니다.</value>
+  </data>
+  <data name="ClearSizePixelsDescription" xml:space="preserve">
+    <value>중앙의 빈 영역 크기입니다.</value>
+  </data>
+  <data name="Jaggedness" xml:space="preserve">
+    <value>들쭉날쭉함</value>
+  </data>
+  <data name="JaggednessDescription" xml:space="preserve">
+    <value>선이 시작되는 위치의 변화 정도입니다. 빈 영역 크기에 대한 비율입니다.</value>
+  </data>
+  <data name="Rotation" xml:space="preserve">
+    <value>회전</value>
+  </data>
+  <data name="Twist" xml:space="preserve">
+    <value>비틀기</value>
+  </data>
+  <data name="TwistDescription" xml:space="preserve">
+    <value>선을 소용돌이 모양으로 휘게 합니다.</value>
+  </data>
+  <data name="UpdateInterval" xml:space="preserve">
+    <value>갱신 간격 (초)</value>
+  </data>
+  <data name="UpdateIntervalLinesDescription" xml:space="preserve">
+    <value>이 간격으로 선을 다시 그립니다. 0으로 설정하면 다시 그리지 않습니다.</value>
+  </data>
+  <data name="UpdateIntervalSpeedLinesDescription" xml:space="preserve">
+    <value>이 간격으로 선을 다시 그립니다. 0으로 설정하면 다시 그리지 않습니다.</value>
+  </data>
+  <data name="UpdateIntervalFlashDescription" xml:space="preserve">
+    <value>이 간격으로 빛을 다시 그립니다. 0으로 설정하면 다시 그리지 않습니다.</value>
+  </data>
+  <data name="Seed" xml:space="preserve">
+    <value>시드</value>
+  </data>
+  <data name="Fill" xml:space="preserve">
+    <value>채우기</value>
+  </data>
+  <data name="Stroke" xml:space="preserve">
+    <value>윤곽선</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>길이</value>
+  </data>
+  <data name="LengthVariation" xml:space="preserve">
+    <value>길이 변화</value>
+  </data>
+  <data name="LineShape" xml:space="preserve">
+    <value>선 모양</value>
+  </data>
+  <data name="Angle" xml:space="preserve">
+    <value>각도</value>
+  </data>
+  <data name="AngleDescription" xml:space="preserve">
+    <value>선의 방향입니다. 0이면 오른쪽으로 흐릅니다.</value>
+  </data>
+  <data name="SpeedLengthDescription" xml:space="preserve">
+    <value>선 방향의 화면 길이에 대한 선 길이의 비율입니다.</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>속도 (px/초)</value>
+  </data>
+  <data name="SpeedDescription" xml:space="preserve">
+    <value>선이 흐르는 속도입니다. 0으로 설정하면 멈춥니다.</value>
+  </data>
+  <data name="SpeedVariation" xml:space="preserve">
+    <value>속도 변화</value>
+  </data>
+  <data name="ClearBandDescription" xml:space="preserve">
+    <value>중앙에 선을 그리지 않는 띠의 너비입니다. 화면 크기에 대한 비율입니다.</value>
+  </data>
+  <data name="FlashLengthDescription" xml:space="preserve">
+    <value>빈 영역 가장자리에서 화면 가장자리까지의 거리에 대한 빛 길이의 비율입니다.</value>
+  </data>
+  <data name="FlashThicknessDescription" xml:space="preserve">
+    <value>빛의 밑부분 두께입니다.</value>
+  </data>
+  <data name="FlashFillDescription" xml:space="preserve">
+    <value>빛과 중앙의 빈 영역 바깥을 채웁니다.</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>빛</value>
+  </data>
+  <data name="LightDescription" xml:space="preserve">
+    <value>설정하지 않으면 빛 모양의 영역이 투명해집니다.</value>
+  </data>
+  <data name="RayWidth" xml:space="preserve">
+    <value>선 너비</value>
+  </data>
+  <data name="RayWidthDescription" xml:space="preserve">
+    <value>선과 간격을 합친 너비에 대한 선 너비의 비율입니다.</value>
+  </data>
+  <data name="RotationSpeed" xml:space="preserve">
+    <value>회전 속도 (°/초)</value>
+  </data>
+  <data name="RotationSpeedDescription" xml:space="preserve">
+    <value>양수이면 시계 방향으로 회전합니다.</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>배경</value>
+  </data>
+  <data name="BackgroundDescription" xml:space="preserve">
+    <value>선 사이를 채웁니다.</value>
+  </data>
+  <data name="TaperBoth" xml:space="preserve">
+    <value>양 끝 가늘게</value>
+  </data>
+  <data name="TaperOuter" xml:space="preserve">
+    <value>바깥쪽 끝 가늘게</value>
+  </data>
+  <data name="TaperInner" xml:space="preserve">
+    <value>안쪽 끝 가늘게</value>
+  </data>
+  <data name="TaperBack" xml:space="preserve">
+    <value>뒤쪽 끝 가늘게</value>
+  </data>
+  <data name="TaperFront" xml:space="preserve">
+    <value>앞쪽 끝 가늘게</value>
+  </data>
+  <data name="TaperNone" xml:space="preserve">
+    <value>가늘게 하지 않음</value>
+  </data>
+</root>

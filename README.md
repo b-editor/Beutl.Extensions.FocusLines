@@ -4,6 +4,8 @@
 
 集中線などの漫画の効果線を描くBeutlの拡張機能です。ライブラリの「集中線」グループに、次の5種類のオブジェクトを追加します。
 
+表示言語はBeutlの設定に従います。日本語・英語・簡体字中国語・韓国語・スペイン語に対応し、それ以外の言語では英語で表示します。言語を変更した後はBeutlを再起動してください。
+
 | 種類 | 描くもの |
 | --- | --- |
 | 集中線 | 画面の外から中心へ集まる線。中心の周りは空白になります。 |
@@ -87,6 +89,8 @@ dotnet build src/Beutl.Extensions.FocusLines -p:DebugApplication=true
 ```
 
 アイコンは `assets/icon.svg` を512pxで書き出したものです。文字は Noto Sans JP Black（SIL Open Font License 1.1）の字形をパスにしています。
+
+翻訳は `src/Beutl.Extensions.FocusLines/Properties/Strings*.resx` で管理します。`Strings.resx` が英語の既定値で、言語別ファイルに同じキーの翻訳を追加します。リソースクラスはビルド時に自動生成されます。
 
 ## ライセンス
 
