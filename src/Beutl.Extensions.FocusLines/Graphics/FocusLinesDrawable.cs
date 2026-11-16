@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Beutl.Composition;
 using Beutl.Engine;
+using Beutl.Extensions.FocusLines.Properties;
 using Beutl.Graphics;
 using Beutl.Graphics.Rendering;
 using Beutl.Media;
@@ -9,7 +10,7 @@ namespace Beutl.Extensions.FocusLines.Graphics;
 
 /// <summary>Lines that converge on a point from beyond the edges of the screen, leaving a clear area round it.</summary>
 /// <remarks>The drawable covers the whole screen; its centre is measured from the middle of the screen.</remarks>
-[Display(Name = "集中線")]
+[Display(Name = nameof(Strings.FocusLines), ResourceType = typeof(Strings))]
 public sealed partial class FocusLinesDrawable : Drawable, IEditingHandleProvider
 {
     public FocusLinesDrawable()
@@ -18,63 +19,63 @@ public sealed partial class FocusLinesDrawable : Drawable, IEditingHandleProvide
         Fill.Value = new SolidColorBrush(Colors.White);
     }
 
-    [Display(Name = "中心", Description = "画面の中央からの位置。プレビューのハンドルでも動かせます")]
+    [Display(Name = nameof(Strings.Center), Description = nameof(Strings.CenterDescription), ResourceType = typeof(Strings))]
     public IExpressionProperty<Point> Center { get; } = Property.CreateAnimatable(default(Point));
 
-    [Display(Name = "本数")]
+    [Display(Name = nameof(Strings.Count), ResourceType = typeof(Strings))]
     [Range(1, 2000)]
     public IExpressionProperty<int> Count { get; } = Property.CreateAnimatable(120);
 
-    [Display(Name = "太さ", Description = "画面の端での線の太さ")]
+    [Display(Name = nameof(Strings.Thickness), Description = nameof(Strings.FocusThicknessDescription), ResourceType = typeof(Strings))]
     [Range(0f, 1000f)]
     public IExpressionProperty<float> Thickness { get; } = Property.CreateAnimatable(16f);
 
-    [Display(Name = "太さのばらつき")]
+    [Display(Name = nameof(Strings.ThicknessVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> ThicknessVariation { get; } = Property.CreateAnimatable(70f);
 
-    [Display(Name = "間隔のばらつき")]
+    [Display(Name = nameof(Strings.SpacingVariation), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> SpacingVariation { get; } = Property.CreateAnimatable(100f);
 
-    [Display(Name = "空白の幅", Description = "画面の大きさに対する、中心の空白の大きさ")]
+    [Display(Name = nameof(Strings.ClearWidth), Description = nameof(Strings.ClearSizePercentDescription), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
-    [CombinedEditor(nameof(ClearHeight), Name = "空白の大きさ")]
+    [CombinedEditor(nameof(ClearHeight), Name = nameof(Strings.ClearSize), ResourceType = typeof(Strings))]
     public IExpressionProperty<float> ClearWidth { get; } = Property.CreateAnimatable(50f);
 
-    [Display(Name = "空白の高さ")]
+    [Display(Name = nameof(Strings.ClearHeight), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> ClearHeight { get; } = Property.CreateAnimatable(50f);
 
-    [Display(Name = "ギザギザ", Description = "線の始まる位置のばらつき。空白の大きさに対する割合")]
+    [Display(Name = nameof(Strings.Jaggedness), Description = nameof(Strings.JaggednessDescription), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> Jaggedness { get; } = Property.CreateAnimatable(40f);
 
-    [Display(Name = "回転")]
+    [Display(Name = nameof(Strings.Rotation), ResourceType = typeof(Strings))]
     [Unit(PropertyUnit.Degrees)]
     public IExpressionProperty<float> Rotation { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "ねじれ", Description = "線を渦のように曲げます")]
+    [Display(Name = nameof(Strings.Twist), Description = nameof(Strings.TwistDescription), ResourceType = typeof(Strings))]
     [Range(-720f, 720f)]
     [Unit(PropertyUnit.Degrees)]
     public IExpressionProperty<float> Twist { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "更新間隔 (秒)", Description = "この間隔で線を描き直します。0で止まります")]
+    [Display(Name = nameof(Strings.UpdateInterval), Description = nameof(Strings.UpdateIntervalLinesDescription), ResourceType = typeof(Strings))]
     [Range(0f, 60f)]
     public IExpressionProperty<float> UpdateInterval { get; } = Property.CreateAnimatable(0.1f);
 
-    [Display(Name = "シード")]
+    [Display(Name = nameof(Strings.Seed), ResourceType = typeof(Strings))]
     public IExpressionProperty<int> Seed { get; } = Property.CreateAnimatable(0);
 
-    [Display(Name = "塗りつぶし")]
+    [Display(Name = nameof(Strings.Fill), ResourceType = typeof(Strings))]
     public IExpressionProperty<Brush?> Fill { get; } = Property.CreateExpression<Brush?>();
 
-    [Display(Name = "ストローク")]
+    [Display(Name = nameof(Strings.Stroke), ResourceType = typeof(Strings))]
     public IExpressionProperty<Pen?> Pen { get; } = Property.CreateExpression<Pen?>();
 
     public IReadOnlyList<EditingHandle> GetEditingHandles(MediaTime time) => CenterHandle.Get(this, Center, time);

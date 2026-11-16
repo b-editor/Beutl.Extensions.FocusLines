@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Beutl.Extensions.FocusLines.Properties;
 using Beutl.Graphics;
 
 namespace Beutl.Extensions.FocusLines.Graphics;
@@ -6,29 +7,29 @@ namespace Beutl.Extensions.FocusLines.Graphics;
 /// <summary>Which ends of a flash line come to a point.</summary>
 public enum FlashLineShape
 {
-    [Display(Name = "両端を細く")]
+    [Display(Name = nameof(Strings.TaperBoth), ResourceType = typeof(Strings))]
     Both,
 
-    [Display(Name = "外側を細く")]
+    [Display(Name = nameof(Strings.TaperOuter), ResourceType = typeof(Strings))]
     Outer,
 
-    [Display(Name = "内側を細く")]
+    [Display(Name = nameof(Strings.TaperInner), ResourceType = typeof(Strings))]
     Inner,
 }
 
 /// <summary>Which ends of a speed line come to a point; the front is the way the line moves.</summary>
 public enum SpeedLineShape
 {
-    [Display(Name = "両端を細く")]
+    [Display(Name = nameof(Strings.TaperBoth), ResourceType = typeof(Strings))]
     Both,
 
-    [Display(Name = "後ろを細く")]
+    [Display(Name = nameof(Strings.TaperBack), ResourceType = typeof(Strings))]
     Back,
 
-    [Display(Name = "前を細く")]
+    [Display(Name = nameof(Strings.TaperFront), ResourceType = typeof(Strings))]
     Front,
 
-    [Display(Name = "細くしない")]
+    [Display(Name = nameof(Strings.TaperNone), ResourceType = typeof(Strings))]
     None,
 }
 

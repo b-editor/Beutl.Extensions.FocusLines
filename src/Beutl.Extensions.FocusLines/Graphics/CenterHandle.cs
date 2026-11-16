@@ -1,5 +1,6 @@
 using Beutl.Composition;
 using Beutl.Engine;
+using Beutl.Extensions.FocusLines.Properties;
 using Beutl.Graphics;
 using Beutl.Media;
 using Beutl.ProjectSystem;
@@ -23,6 +24,6 @@ internal static class CenterHandle
         Point offset = new CompositionContext(time).Get(center);
         var position = new Point(frame.Width / 2f + offset.X, frame.Height / 2f + offset.Y);
         // The host moves the property by the drag, on its keyframes when it is animated.
-        return [new EditingHandle(Id, position, "中心") { Property = center }];
+        return [new EditingHandle(Id, position, Strings.Center) { Property = center }];
     }
 }

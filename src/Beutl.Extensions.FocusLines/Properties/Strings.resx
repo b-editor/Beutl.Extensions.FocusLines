@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="FocusLines" xml:space="preserve">
+    <value>Focus Lines</value>
+  </data>
+  <data name="UrchinFlash" xml:space="preserve">
+    <value>Urchin Flash</value>
+  </data>
+  <data name="BetaFlash" xml:space="preserve">
+    <value>Solid Flash</value>
+  </data>
+  <data name="SpeedLines" xml:space="preserve">
+    <value>Speed Lines</value>
+  </data>
+  <data name="Sunburst" xml:space="preserve">
+    <value>Sunburst</value>
+  </data>
+  <data name="FocusLinesDescription" xml:space="preserve">
+    <value>Covers the screen with lines that converge on a point.</value>
+  </data>
+  <data name="UrchinFlashDescription" xml:space="preserve">
+    <value>Lines spread outward like spines around a clear center.</value>
+  </data>
+  <data name="BetaFlashDescription" xml:space="preserve">
+    <value>Fills the screen with a solid color and rays of light from the center.</value>
+  </data>
+  <data name="SpeedLinesDescription" xml:space="preserve">
+    <value>Covers the screen with parallel lines moving in one direction.</value>
+  </data>
+  <data name="SunburstDescription" xml:space="preserve">
+    <value>Covers the screen with rays spreading out from the center.</value>
+  </data>
+  <data name="Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="CenterDescription" xml:space="preserve">
+    <value>Position relative to the center of the screen. You can also drag the preview handle.</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Line count</value>
+  </data>
+  <data name="Thickness" xml:space="preserve">
+    <value>Thickness</value>
+  </data>
+  <data name="FocusThicknessDescription" xml:space="preserve">
+    <value>Line thickness at the edge of the screen.</value>
+  </data>
+  <data name="ThicknessVariation" xml:space="preserve">
+    <value>Thickness variation</value>
+  </data>
+  <data name="SpacingVariation" xml:space="preserve">
+    <value>Spacing variation</value>
+  </data>
+  <data name="ClearWidth" xml:space="preserve">
+    <value>Clear width</value>
+  </data>
+  <data name="ClearHeight" xml:space="preserve">
+    <value>Clear height</value>
+  </data>
+  <data name="ClearSize" xml:space="preserve">
+    <value>Clear size</value>
+  </data>
+  <data name="ClearSizePercentDescription" xml:space="preserve">
+    <value>Size of the clear center as a percentage of the screen dimensions.</value>
+  </data>
+  <data name="ClearSizePixelsDescription" xml:space="preserve">
+    <value>Size of the clear area at the center.</value>
+  </data>
+  <data name="Jaggedness" xml:space="preserve">
+    <value>Jaggedness</value>
+  </data>
+  <data name="JaggednessDescription" xml:space="preserve">
+    <value>Variation in where lines start, as a percentage of the clear area's size.</value>
+  </data>
+  <data name="Rotation" xml:space="preserve">
+    <value>Rotation</value>
+  </data>
+  <data name="Twist" xml:space="preserve">
+    <value>Twist</value>
+  </data>
+  <data name="TwistDescription" xml:space="preserve">
+    <value>Curves the lines into a spiral.</value>
+  </data>
+  <data name="UpdateInterval" xml:space="preserve">
+    <value>Update interval (s)</value>
+  </data>
+  <data name="UpdateIntervalLinesDescription" xml:space="preserve">
+    <value>Redraws the lines at this interval. Set to 0 to stop redrawing.</value>
+  </data>
+  <data name="UpdateIntervalSpeedLinesDescription" xml:space="preserve">
+    <value>Redraws the lines at this interval. Set to 0 to disable redrawing.</value>
+  </data>
+  <data name="UpdateIntervalFlashDescription" xml:space="preserve">
+    <value>Redraws the rays at this interval. Set to 0 to stop redrawing.</value>
+  </data>
+  <data name="Seed" xml:space="preserve">
+    <value>Seed</value>
+  </data>
+  <data name="Fill" xml:space="preserve">
+    <value>Fill</value>
+  </data>
+  <data name="Stroke" xml:space="preserve">
+    <value>Stroke</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="LengthVariation" xml:space="preserve">
+    <value>Length variation</value>
+  </data>
+  <data name="LineShape" xml:space="preserve">
+    <value>Line shape</value>
+  </data>
+  <data name="Angle" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="AngleDescription" xml:space="preserve">
+    <value>Direction of the lines. At 0, they move to the right.</value>
+  </data>
+  <data name="SpeedLengthDescription" xml:space="preserve">
+    <value>Line length as a percentage of the screen length in the direction of the lines.</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>Speed (px/s)</value>
+  </data>
+  <data name="SpeedDescription" xml:space="preserve">
+    <value>How fast the lines move. Set to 0 to stop them.</value>
+  </data>
+  <data name="SpeedVariation" xml:space="preserve">
+    <value>Speed variation</value>
+  </data>
+  <data name="ClearBandDescription" xml:space="preserve">
+    <value>Width of the clear band through the middle, as a percentage of the screen.</value>
+  </data>
+  <data name="FlashLengthDescription" xml:space="preserve">
+    <value>Ray length as a percentage of the distance from the clear area to the screen edge.</value>
+  </data>
+  <data name="FlashThicknessDescription" xml:space="preserve">
+    <value>Thickness of the rays at their base.</value>
+  </data>
+  <data name="FlashFillDescription" xml:space="preserve">
+    <value>Fills the area outside the rays and the clear center.</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="LightDescription" xml:space="preserve">
+    <value>When unset, the rays become transparent cutouts.</value>
+  </data>
+  <data name="RayWidth" xml:space="preserve">
+    <value>Ray width</value>
+  </data>
+  <data name="RayWidthDescription" xml:space="preserve">
+    <value>Ray width as a percentage of the combined width of a ray and its gap.</value>
+  </data>
+  <data name="RotationSpeed" xml:space="preserve">
+    <value>Rotation speed (°/s)</value>
+  </data>
+  <data name="RotationSpeedDescription" xml:space="preserve">
+    <value>Positive values rotate clockwise.</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="BackgroundDescription" xml:space="preserve">
+    <value>Fills the gaps between the rays.</value>
+  </data>
+  <data name="TaperBoth" xml:space="preserve">
+    <value>Taper both ends</value>
+  </data>
+  <data name="TaperOuter" xml:space="preserve">
+    <value>Taper outer end</value>
+  </data>
+  <data name="TaperInner" xml:space="preserve">
+    <value>Taper inner end</value>
+  </data>
+  <data name="TaperBack" xml:space="preserve">
+    <value>Taper back end</value>
+  </data>
+  <data name="TaperFront" xml:space="preserve">
+    <value>Taper front end</value>
+  </data>
+  <data name="TaperNone" xml:space="preserve">
+    <value>No taper</value>
+  </data>
+</root>

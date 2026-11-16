@@ -2,18 +2,28 @@
 
     <PropertyGroup>
         <PackageId>Beutl.Extensions.FocusLines</PackageId>
-        <Title>集中線</Title>
-        <Description>集中線・ウニフラッシュ・ベタフラッシュ・流線・放射の効果線を描くオブジェクトを追加します</Description>
+        <Title>Focus Lines</Title>
+        <Description>Adds manga effect lines: focus lines, urchin flashes, solid flashes, speed lines, and sunbursts.</Description>
         <PackageTags>effect,manga,focuslines,speedlines,集中線,効果線,流線,ウニフラ,ベタフラ</PackageTags>
         <Version>0.1.0</Version>
         <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <Authors>Yuto Terada</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>icon.png</PackageIcon>
+        <NeutralLanguage>en</NeutralLanguage>
     </PropertyGroup>
 
     <ItemGroup>
         <InternalsVisibleTo Include="Beutl.Extensions.FocusLines.Tests" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Properties/Strings.resx"
+                          StronglyTypedLanguage="C#"
+                          StronglyTypedNamespace="Beutl.Extensions.FocusLines.Properties"
+                          StronglyTypedClassName="Strings"
+                          StronglyTypedFileName="$(IntermediateOutputPath)Strings.Designer.cs"
+                          PublicClass="true" />
     </ItemGroup>
 
     <ItemGroup>

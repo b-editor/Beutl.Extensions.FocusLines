@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Beutl.Composition;
 using Beutl.Engine;
+using Beutl.Extensions.FocusLines.Properties;
 using Beutl.Graphics;
 using Beutl.Graphics.Rendering;
 using Beutl.Media;
@@ -9,7 +10,7 @@ namespace Beutl.Extensions.FocusLines.Graphics;
 
 /// <summary>Wedge-shaped rays that fan out from a point over the whole screen, and can turn.</summary>
 /// <remarks>The centre is measured from the middle of the screen.</remarks>
-[Display(Name = "放射")]
+[Display(Name = nameof(Strings.Sunburst), ResourceType = typeof(Strings))]
 public sealed partial class SunburstDrawable : Drawable, IEditingHandleProvider
 {
     public SunburstDrawable()
@@ -18,46 +19,46 @@ public sealed partial class SunburstDrawable : Drawable, IEditingHandleProvider
         Fill.Value = new SolidColorBrush(Color.FromArgb(96, 255, 255, 255));
     }
 
-    [Display(Name = "中心", Description = "画面の中央からの位置。プレビューのハンドルでも動かせます")]
+    [Display(Name = nameof(Strings.Center), Description = nameof(Strings.CenterDescription), ResourceType = typeof(Strings))]
     public IExpressionProperty<Point> Center { get; } = Property.CreateAnimatable(default(Point));
 
-    [Display(Name = "本数")]
+    [Display(Name = nameof(Strings.Count), ResourceType = typeof(Strings))]
     [Range(1, 360)]
     public IExpressionProperty<int> Count { get; } = Property.CreateAnimatable(16);
 
-    [Display(Name = "線の幅", Description = "線と隙間を合わせた幅に対する、線の幅")]
+    [Display(Name = nameof(Strings.RayWidth), Description = nameof(Strings.RayWidthDescription), ResourceType = typeof(Strings))]
     [Range(0f, 100f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> RayWidth { get; } = Property.CreateAnimatable(50f);
 
-    [Display(Name = "空白の幅", Description = "画面の大きさに対する、中心の空白の大きさ")]
+    [Display(Name = nameof(Strings.ClearWidth), Description = nameof(Strings.ClearSizePercentDescription), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
-    [CombinedEditor(nameof(ClearHeight), Name = "空白の大きさ")]
+    [CombinedEditor(nameof(ClearHeight), Name = nameof(Strings.ClearSize), ResourceType = typeof(Strings))]
     public IExpressionProperty<float> ClearWidth { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "空白の高さ")]
+    [Display(Name = nameof(Strings.ClearHeight), ResourceType = typeof(Strings))]
     [Range(0f, 400f)]
     [Unit(PropertyUnit.Percent)]
     public IExpressionProperty<float> ClearHeight { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "回転")]
+    [Display(Name = nameof(Strings.Rotation), ResourceType = typeof(Strings))]
     [Unit(PropertyUnit.Degrees)]
     public IExpressionProperty<float> Rotation { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "回転の速さ (°/秒)", Description = "正の値で時計回りに回ります")]
+    [Display(Name = nameof(Strings.RotationSpeed), Description = nameof(Strings.RotationSpeedDescription), ResourceType = typeof(Strings))]
     [Range(-36000f, 36000f)]
     public IExpressionProperty<float> RotationSpeed { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "ねじれ", Description = "線を渦のように曲げます")]
+    [Display(Name = nameof(Strings.Twist), Description = nameof(Strings.TwistDescription), ResourceType = typeof(Strings))]
     [Range(-720f, 720f)]
     [Unit(PropertyUnit.Degrees)]
     public IExpressionProperty<float> Twist { get; } = Property.CreateAnimatable(0f);
 
-    [Display(Name = "塗りつぶし")]
+    [Display(Name = nameof(Strings.Fill), ResourceType = typeof(Strings))]
     public IExpressionProperty<Brush?> Fill { get; } = Property.CreateExpression<Brush?>();
 
-    [Display(Name = "背景", Description = "線の間を塗ります")]
+    [Display(Name = nameof(Strings.Background), Description = nameof(Strings.BackgroundDescription), ResourceType = typeof(Strings))]
     public IExpressionProperty<Brush?> Background { get; } = Property.CreateExpression<Brush?>();
 
     public IReadOnlyList<EditingHandle> GetEditingHandles(MediaTime time) => CenterHandle.Get(this, Center, time);
