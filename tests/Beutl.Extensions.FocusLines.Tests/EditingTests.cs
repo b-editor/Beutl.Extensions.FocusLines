@@ -1,12 +1,14 @@
 using System.Text.Json.Nodes;
 using Beutl.Animation;
 using Beutl.Engine;
+using Beutl.Extensibility;
 using Beutl.Extensions.FocusLines.Graphics;
 using Beutl.Graphics;
 using Beutl.Media;
 using Beutl.ProjectSystem;
 using Beutl.Serialization;
 using Beutl.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Beutl.Extensions.FocusLines.Tests;
 
@@ -50,7 +52,9 @@ public class EditingTests
     [Test]
     public void EveryKindCanBeDroppedOnTheTimeline()
     {
-        new FocusLinesExtension().Load();
+        using var library = new LibraryService();
+        using ServiceProvider services = new ServiceCollection().AddSingleton(library).BuildServiceProvider();
+        new FocusLinesExtension().Load(new ExtensionContext(services));
 
         Type[] types =
         [
@@ -59,8 +63,8 @@ public class EditingTests
         ];
         // The timeline only accepts library items that carry the EngineObject format; the Drawable format alone
         // shows in the library but is refused on drop.
-        Assert.That(LibraryService.Current.GetTypesFromFormat(KnownLibraryItemFormats.EngineObject), Is.SupersetOf(types));
-        Assert.That(LibraryService.Current.GetTypesFromFormat(KnownLibraryItemFormats.Drawable), Is.SupersetOf(types));
+        Assert.That(library.GetTypesFromFormat(KnownLibraryItemFormats.EngineObject), Is.SupersetOf(types));
+        Assert.That(library.GetTypesFromFormat(KnownLibraryItemFormats.Drawable), Is.SupersetOf(types));
     }
 
     [Test]

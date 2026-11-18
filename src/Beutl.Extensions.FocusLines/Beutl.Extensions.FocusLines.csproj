@@ -1,12 +1,12 @@
-<Project Sdk="Beutl.Extensibility.Sdk/2.0.0-preview.12">
+<Project Sdk="Beutl.Extensibility.Sdk/2.0.0-preview.14">
 
     <PropertyGroup>
         <PackageId>Beutl.Extensions.FocusLines</PackageId>
         <Title>Focus Lines</Title>
         <Description>Adds manga effect lines: focus lines, urchin flashes, solid flashes, speed lines, and sunbursts.</Description>
         <PackageTags>effect,manga,focuslines,speedlines,集中線,効果線,流線,ウニフラ,ベタフラ</PackageTags>
-        <Version>0.1.0</Version>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
+        <Version>0.1.1</Version>
+        <AssemblyVersion>0.1.1.0</AssemblyVersion>
         <Authors>Yuto Terada</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>icon.png</PackageIcon>

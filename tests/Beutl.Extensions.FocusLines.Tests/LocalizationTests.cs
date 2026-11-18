@@ -3,9 +3,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Reflection;
 using System.Resources;
+using Beutl.Extensibility;
 using Beutl.Extensions.FocusLines.Graphics;
 using Beutl.Extensions.FocusLines.Properties;
 using Beutl.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Beutl.Extensions.FocusLines.Tests;
 
@@ -78,9 +80,11 @@ public class LocalizationTests
                 }
             }
 
-            extension.Load();
-            GroupLibraryItem group = LibraryService.Current.Items.OfType<GroupLibraryItem>().Single(item => item.DisplayName == name);
-            LibraryItem[] items = group.Items.TakeLast(5).ToArray();
+            using var library = new LibraryService();
+            using ServiceProvider services = new ServiceCollection().AddSingleton(library).BuildServiceProvider();
+            extension.Load(new ExtensionContext(services));
+            GroupLibraryItem group = library.Items.OfType<GroupLibraryItem>().Single(item => item.DisplayName == name);
+            LibraryItem[] items = group.Items.ToArray();
             Assert.That(items.Select(item => item.DisplayName), Is.EqualTo(s_drawableTypes.Select(type => type.GetCustomAttribute<DisplayAttribute>()!.GetName())));
             Assert.That(items.Select(item => item.Description), Is.EqualTo(new[]
             {
