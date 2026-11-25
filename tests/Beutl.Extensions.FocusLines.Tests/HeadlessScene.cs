@@ -59,8 +59,8 @@ internal static class HeadlessScene
         EnsureAvailable();
         return RenderThread.Dispatcher.Invoke(() =>
         {
-            // The scenes hold no text, so they need no FontManager.
-            using var renderer = new SceneRenderer(scene, fonts: null, RenderIntent.Delivery);
+            // The scenes hold no text or media, so they need no fonts or decoders.
+            using var renderer = new SceneRenderer(scene, SceneRenderServices.Empty, RenderIntent.Delivery);
             CompositionFrame frame = renderer.Compositor.EvaluateGraphics(MediaTime.FromTimeSpan(time));
             renderer.Render(frame);
             using Bitmap snapshot = renderer.Snapshot();
